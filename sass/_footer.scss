@@ -1,0 +1,109 @@
+.footer {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding-top: 105px;
+  padding-bottom: 30px;
+  background: #052347;
+  &-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    padding-left: 130px;
+  }
+  &-select {
+    display: flex;
+    margin-left: 213px;
+  }
+  &-desc {
+    font-size: 14px;
+    line-height: calc(22 / 14);
+    color: #afaccd;
+    margin-bottom: 27px;
+  }
+  &-logo {
+    margin-bottom: 21px;
+  }
+  &-icon {
+    display: flex;
+    :not(first-child) {
+      margin-left: 12px;
+    }
+  }
+  &-item {
+    &:first-child {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: calc(35 / 18);
+      p {
+        color: #d9e1f0;
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(35 / 18);
+      }
+    }
+    :not(first-child) {
+      margin-left: 73px;
+    }
+  }
+  &-link {
+    color: #afaccd;
+    font-size: 14px;
+    line-height: calc(37 / 14);
+  }
+  &-bottom {
+    max-width: 1130px;
+    margin: 0 auto;
+    border-top: 1px solid #11317c;
+  }
+  &-end {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    text-align: center;
+    color: #8b9fcf;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding-top: 50px;
+    &-container {
+      flex-direction: column;
+      padding-left: 0;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-select {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 0 20px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    &-item {
+      :not(first-child) {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer {
+    &-select {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    &-list:not(last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

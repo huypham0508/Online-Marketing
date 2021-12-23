@@ -1,0 +1,46 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 102px;
+  font-family: $primary-font;
+  font-size: 16px;
+  color: $black-light;
+}
+.btn {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 41px;
+  background: $linear-color;
+  outline: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+.title {
+  font-size: 13px;
+  color: $orange;
+  margin-bottom: 18px;
+  font-weight: 500;
+  letter-spacing: 0.185em;
+  line-height: calc(19 / 13);
+  text-transform: uppercase;
+}
+.global {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: calc(50 / 40);
+  color: $black-dark;
+}
+.desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: $gray;
+}
+@media screen and (max-width: 375px) {
+  body {
+    margin-top: 50px;
+  }
+}

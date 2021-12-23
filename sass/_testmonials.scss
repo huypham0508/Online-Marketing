@@ -1,0 +1,61 @@
+.testmonials {
+  margin-bottom: 140px;
+  &-container {
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  &-content {
+    margin-left: 208px;
+  }
+  &-title {
+    margin-bottom: 11px;
+  }
+  &-heading {
+    margin-bottom: 25px;
+  }
+  &-desc {
+    margin-bottom: 20px;
+  }
+  &-more {
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+  &-number {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: $orange;
+  }
+  &-button {
+    padding: 17px 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .testmonials {
+    margin-bottom: 70px;
+    &-content {
+      margin-left: 50px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .testmonials {
+    &-heading {
+      font-size: 30px;
+    }
+    &-img {
+      display: none;
+    }
+    &-content {
+      margin: 0 auto;
+    }
+    &-button {
+      margin-left: 15px;
+    }
+  }
+}

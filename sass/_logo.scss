@@ -1,0 +1,32 @@
+.logo {
+  margin-bottom: 140px;
+  &-container {
+    background: #f4f7fd;
+    max-width: 1470px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-items {
+    margin-left: 43px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    margin-bottom: 70px;
+    &-container {
+      flex-direction: column;
+    }
+    &-items {
+      margin-bottom: 15px;
+      margin-left: 0;
+    }
+  }
+}

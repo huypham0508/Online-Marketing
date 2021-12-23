@@ -1,0 +1,119 @@
+.features {
+  margin-bottom: 140px;
+  &-primary {
+    max-width: 1220px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 113px;
+  }
+  &-secondary {
+    max-width: 1440px;
+    padding: 117px 155px 89px;
+    margin: 0 auto;
+    background-color: #f4f8fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.primary {
+  &-title {
+    margin-bottom: 25px;
+  }
+  &-heading {
+    margin-bottom: 25px;
+  }
+  &-desc {
+    margin-bottom: 37px;
+  }
+  &-button {
+    padding: 17px 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    color: #fff;
+  }
+}
+.secondary {
+  &-title {
+    margin-bottom: 18px;
+  }
+  &-heading {
+    margin-bottom: 25px;
+  }
+  &-desc {
+    margin-bottom: 34px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+  }
+  &-button {
+    padding: 17px 30px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features {
+    &-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-secondary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 80px 133px 50px;
+    }
+    .primary {
+      &-button {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .secondary {
+      &-button {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &-img {
+        margin-top: -40px;
+      }
+    }
+  }
+  @media screen and (min-width: 375px) {
+    .features {
+      margin-bottom: 50px;
+      &-secondary {
+        padding: 30px 30px 50px;
+      }
+    }
+    .secondary {
+      &-heading {
+        font-size: 30px;
+      }
+      &-img {
+        display: none;
+      }
+    }
+    .primary {
+      &-image {
+        display: none;
+      }
+      &-heading {
+        font-size: 30px;
+      }
+      &-button {
+        margin-left: 15px;
+      }
+    }
+  }
+}
